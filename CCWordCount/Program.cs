@@ -50,7 +50,9 @@ using (StreamReader reader = new(textFile))
 
     if (input == "-m")
     {
-
+        
+        var charsInFile = reader.ReadToEnd().Length;
+        Console.WriteLine(charsInFile);
     }
 }
 
